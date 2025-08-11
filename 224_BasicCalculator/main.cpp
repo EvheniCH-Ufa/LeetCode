@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    int calculate(string s) {
+    int calculate(string& s) {
         auto res = CalcRec("("+ s + ")",0);
         return res.res;
     }
